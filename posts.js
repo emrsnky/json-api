@@ -20,6 +20,7 @@ async function fetchUserPosts() {
 
 fetchUserPosts();
 
+//Create Posts
 function createPosts(post) {
   let postsContainer = document.getElementById("posts-container");
   let postDiv = document.createElement("div");
@@ -35,6 +36,7 @@ function createPosts(post) {
   postsContainer.appendChild(postDiv);
 }
 
+// User Input
 function inputUserId() {
   let userPrompt = Number(prompt("Please enter a number between 1 and 10"));
   if (userPrompt < 1 || userPrompt > 10) {
@@ -44,3 +46,4 @@ function inputUserId() {
     window.location.href = `posts.html?userId=${userPrompt}`;
   }
 }
+
